@@ -4,7 +4,7 @@
 <head>
     <title>Bhatt'sLab</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="Boto Photo Studio HTML Template" />
+    <meta name="description" content="Bhatt's Photography" />
     <meta name="keywords" content="photo, html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Stylesheets -->
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/fresco.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/admin.css" />
 
     <!-- Main Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
@@ -45,84 +46,40 @@
                     <li><a href="./service.html">Service</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.php">Contact</a></li>
-                    <li><a href="./admin/admin.html">Admin</a></li>
+                    <li><a href="./admin.php">Admin</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- Header Section end -->
 
-    <!-- Hero Section -->
-    <section class="hero__section">
-        <div class="hero-slider">
-            <div class="slide-item">
-                <a class="fresco" href="img/hero-slider/1.jpg" data-fresco-group="projects">
-                    <img src="img/hero-slider/1.jpg" alt="" />
-                </a>
-            </div>
-            <div class="slide-item">
-                <a class="fresco" href="img/hero-slider/2.jpg" data-fresco-group="projects">
-                    <img src="img/hero-slider/2.jpg" alt="" />
-                </a>
-            </div>
-            <div class="slide-item">
-                <a class="fresco" href="img/hero-slider/3.jpg" data-fresco-group="projects">
-                    <img src="img/hero-slider/3.jpg" alt="" />
-                </a>
-            </div>
-            <div class="slide-item">
-                <a class="fresco" href="img/hero-slider/4.jpg" data-fresco-group="projects">
-                    <img src="img/hero-slider/4.jpg" alt="" />
-                </a>
-            </div>
-            <div class="slide-item">
-                <a class="fresco" href="img/hero-slider/5.jpg" data-fresco-group="projects">
-                    <img src="img/hero-slider/5.jpg" alt="" />
-                </a>
-            </div>
-            <div class="slide-item">
-                <a class="fresco" href="img/hero-slider/6.jpg" data-fresco-group="projects">
-                    <img src="img/hero-slider/6.jpg" alt="" />
-                </a>
-            </div>
-            <div class="slide-item">
-                <a class="fresco" href="img/hero-slider/7.jpg" data-fresco-group="projects">
-                    <img src="img/hero-slider/7.jpg" alt="" />
-                </a>
+    <!-- FORM -->
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-8 col-md-2 offset-lg-2 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Login</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form action="" method="POST">
+                            <br>
+                            <div class="form-group py-2">
+                                <div class="input-field"><input type="text" placeholder="Username or Email" required> </div>
+                            </div>
+                            <div class="form-group py-1 pb-2">
+                                <div class="input-field"><input type="password" placeholder="Enter your Password" required></button>
+                                </div>
+                            </div>
+                            <div class="btn btn-primary btn-block mt-3">Login</div>
+                        </form>
+                    </div>
+                </div>
+                <br> <br>
             </div>
         </div>
-        <div class="hero-text-slider">
-            <div class="text-item">
-                <h3>BHATT</h3>
-                <p>Photography</p>
-            </div>
-            <div class="text-item">
-                <h3>BHATT</h3>
-                <p>Photography</p>
-            </div>
-            <div class="text-item">
-                <h3>BHATT</h3>
-                <p>Photography</p>
-            </div>
-            <div class="text-item">
-                <h3>BHATT</h3>
-                <p>Photography</p>
-            </div>
-            <div class="text-item">
-                <h3>BHATT</h3>
-                <p>Photography</p>
-            </div>
-            <div class="text-item">
-                <h3>BHATT</h3>
-                <p>Photography</p>
-            </div>
-            <div class="text-item">
-                <h3>BHATT</h3>
-                <p>Photography</p>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section end -->
+    </div>
+    <!-- FORM end -->
 
     <!-- Socialmedia Links -->
     <div class="header__social">

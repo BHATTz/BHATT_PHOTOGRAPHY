@@ -1,0 +1,60 @@
+.container {
+    margin: 50px auto;
+    margin-bottom: 50px;
+}
+
+.font-weight-bold {
+    text-align: center;
+    font-weight: 700!important;
+}
+
+.btn.btn-primary {
+    margin-top: 20px;
+    border-radius: 20px
+}
+
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.offset-lg-4 {
+    margin-left: 30%;
+}
+
+.p-3 {
+    padding: 1rem!important;
+    margin-bottom: 4%;
+}
+
+input[type='text'],
+input[type='password'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%
+}
+
+@media(max-width: 360px) {
+    #forgot {
+        margin-left: 0;
+        padding-top: 10px
+    }
+    body {
+        height: 100%
+    }
+    .container {
+        margin: 30px 0
+    }
+    .bordert:after {
+        left: 25%
+    }
+    .offset-lg-4 {
+        margin-left: 33.333333%;
+        ;
+    }
+}

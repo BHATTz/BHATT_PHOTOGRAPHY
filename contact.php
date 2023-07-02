@@ -1,21 +1,3 @@
-<?php
-if(isset($_POST['submit'])){
-    $Name = $_POST['name'];
-    $Email = $_POST['email'];
-    $Phone = $_POST['phone'];
-    $Message = $_POST['message'];
-
-    $host = 'localhost'; 
-    $user = 'root';
-    $pass = '';
-    $dbname = 'cont';
-
-    $conn = mysqli_connect($host,$user,$pass,$dbname);
-    $sql = "INSERT INTO contact(Name,Email,Phone,Message) values ('$Name','$Email','$Phone','$Message')";
-    mysqli_query($conn,$sql);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="end">
 
@@ -73,12 +55,9 @@ if(isset($_POST['submit'])){
                 <div class="col-md-6">
                     <h2>Contact Me</h2>
                     <div class="contact__social">
-                        <a href="https://instagram.com/________b__h__a__t__t________ ?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i
-              ></a>
-                        <a href="https://github.com/BHATTz" target="_blank"><i class="fa fa-github"></i
-              ></a>
-                        <a href="https://linkedin.com/in/sarthak-bhatt-09" target="_blank"><i class="fa fa-linkedin"></i
-              ></a>
+                        <a href="https://instagram.com/________b__h__a__t__t________ ?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/BHATTz" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sarthak-bhatt-09" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -89,25 +68,40 @@ if(isset($_POST['submit'])){
                     </div>
                 </div>
             </div>
-            <form class="contact__form" action="#" method="POST">
-                <input type="text" placeholder="Name" name="name"/>
-                <input type="text" placeholder="Email" name="email"/>
-                <input type="text" placeholder="Phone" name="phone"/>
-                <textarea placeholder="Message" name="message"></textarea>
-                <button class="site-btn" name="submit">Send Message</button>
+            <form class="contact__form" action="demo.php" method="POST">
+                <input type="text" placeholder="Name" name="name" required />
+                <input type="email" placeholder="Email" name="email" autocomplete="off" required />
+                <input type="text" placeholder="Phone" name="phone" required />
+                <textarea placeholder="Message" name="message" required></textarea>
+                <button class="site-btn" value="submit" name="submit">Send Message</button>
             </form>
         </div>
     </section>
+    <?php
+    if (isset($_POST['submit'])) {
+        $Name = $_POST['name'];
+        $Email = $_POST['email'];
+        $Phone = $_POST['phone'];
+        $Message = $_POST['message'];
+
+        $host = 'localhost';
+        $user = 'root';
+        $pass = '';
+        $dbname = 'cont';
+
+        $conn = mysqli_connect($host, $user, $pass, $dbname);
+        $sql = "INSERT INTO contact(Name,Email,Phone,Message) values ('$Name','$Email','$Phone','$Message')";
+        mysqli_query($conn, $sql);
+    }
+    ?>
+
     <!-- Contact Page end -->
 
     <!-- Socialmedia Links -->
     <div class="header__social">
-        <a href="https://instagram.com/________b__h__a__t__t________ ?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-2x"></i
-      ></a>
-        <a href="https://github.com/BHATTz" target="_blank"><i class="fa fa-github fa-2x"></i
-      ></a>
-        <a href="https://linkedin.com/in/sarthak-bhatt-09" target="_blank"><i class="fa fa-linkedin fa-2x"></i
-      ></a>
+        <a href="https://instagram.com/________b__h__a__t__t________ ?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/BHATTz" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://linkedin.com/in/sarthak-bhatt-09" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
     </div>
     <!-- Socialmedia Links end -->
 
