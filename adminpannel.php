@@ -1,4 +1,3 @@
-<?php require("login_db.php")?>
 <!DOCTYPE html>
 <html lang="end">
 
@@ -55,87 +54,17 @@
     <!-- Header Section end -->
 
     <!-- FORM -->
-    <div class="container">
-        <div class="row">
-            <div class="offset-md-2 col-lg-8 col-md-2 offset-lg-2 offset-md-3">
-                <div class="panel border bg-white">
-                    <div class="panel-heading">
-                        <h3 class="pt-3 font-weight-bold">Login</h3>
-                    </div>
-                    <div class="panel-body p-3">
-                        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
-                            <br>
-                            <div class="form-group py-2">
-                                <div class="input-field"><input type="text" placeholder="Username or Email" name="name" required> </div>
-                            </div>
-                            <div class="form-group py-1 pb-2">
-                                <div class="input-field"><input type="password" placeholder="Enter your Password" name="pass" required></button>
-                                </div>
-                            </div>
-                            <center>
-                                <button name= "login" style="background-color: darkgray;">Log in</button>
-                                </center>
-                        </form>
-                    </div>
-                </div>
-                <br> <br>
-            </div>
-        </div>
-    </div>
+    <center>
+        <p>WELCOME SARTHAK BHATT !!!</p>
+        <button>LOG OUT</button>
+    </center>
     <!-- FORM end -->
-
-  <!-- PHP -->
-  
-  <?php
-
-function input_filter($data){
-$data=trim($data);
-$data=stripslashes($data);
-$data=htmlspecialchars($data);
-return $data;
-}
-
-  if(isset($_POST['login'])){
-   $name=input_filter($_POST['name']);
-   $pass=input_filter($_POST['pass']);
-
-   $name=mysqli_real_escape_string($con,$name);
-   $pass=mysqli_real_escape_string($con,$pass);
-
-$query="SELECT * FROM `admin_login` WHERE `name`=? AND `pass`=?";
-
-if($stmt=mysqli_prepare($con,$query))
-{
-mysqli_stmt_bind_param($stmt,"ss",$name,$pass);
-mysqli_stmt_execute($stmt);
-mysqli_stmt_store_result($stmt);
-if(mysqli_stmt_num_rows($stmt)==1){
-    session_start();
-    $_SESSION['loginId']=$name;
-    header("location: adminpannel.php");
-}
-else{
-    echo"<script>alert('INVALID USERNAME AND PASSWORD');</script>";
-}
-mysqli_stmt_close($stmt);
-}
-else{
-    echo"<script>alert('NOT PREPARED');</script>";
-}
-
-  }
-  ?>
-
-  <!-- PHP end -->
 
     <!-- Socialmedia Links -->
     <div class="header__social">
-        <a href="https://instagram.com/________b__h__a__t__t________ ?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-2x"></i
-      ></a>
-        <a href="https://github.com/BHATTz" target="_blank"><i class="fa fa-github fa-2x"></i
-      ></a>
-        <a href="https://linkedin.com/in/sarthak-bhatt-09" target="_blank"><i class="fa fa-linkedin fa-2x"></i
-      ></a>
+        <a href="https://instagram.com/________b__h__a__t__t________ ?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/BHATTz" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://linkedin.com/in/sarthak-bhatt-09" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
     </div>
     <!-- Socialmedia Links end -->
 
