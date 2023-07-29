@@ -55,8 +55,27 @@
 
     <!-- FORM -->
     <center>
+
         <p>WELCOME SARTHAK BHATT !!!</p>
-        <button>LOG OUT</button>
+
+        <div class="cont">
+            <nav class="main__menu">
+                <ul class="nav__menu">
+                    <li><a href="./index.html" class="menu--active">Contact's</a></li>
+                    <li><a href="./about.html">Blog's</a></li>
+                    <li><a href="./gallery.html">Service's</a></li>
+                    <li><a href="./service.html">Gallery's</a></li>
+                    <!-- <li><a href=""> </a></li> -->
+                </ul>
+            </nav>
+        </div>
+
+
+
+<div class="log">
+<button>LOG OUT</button>
+</div>
+        
     </center>
     <!-- FORM end -->
 

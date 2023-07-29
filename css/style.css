@@ -1204,3 +1204,24 @@ ol {
   resize: none;
   margin-bottom: 50px;
 }
+
+.log{
+margin-bottom: 4%;
+}
+@media (max-width: 576px){
+.log {
+    display: flex;
+    padding-bottom: 10%;
+    padding-left: 140px;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: -18%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+}
+.cont{
+  margin-top:-6% ;
+}

@@ -47,7 +47,6 @@
                     <li><a href="./service.html">Service</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.php">Contact</a></li>
-                    <li><a href="./admin.php">Admin</a></li>
                 </ul>
             </nav>
         </div>
